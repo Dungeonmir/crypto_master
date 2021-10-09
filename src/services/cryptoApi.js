@@ -13,13 +13,16 @@ endpoints:(builder)=>({
         query:()=>'/global'
     }),
     getCoins: builder.query({
-        query:()=>'/coins'
-    })
+        query:()=>`/coins`
+    }),
+    getExchanges: builder.query({
+        query:()=>'/exchanges'
+    }),
 })
 });
 
 export const {
-    useGetCoinsQuery, useGetGlobalStatsQuery
+    useGetCoinsQuery, useGetGlobalStatsQuery, useGetExchangesQuery
 } = cryptoApi;
 /*
 https://api.coinpaprika.com/v1/coins

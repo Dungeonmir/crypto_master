@@ -344,6 +344,7 @@ width: 70%;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
+    width: 100%;
 }
 .show-more{
     margin-top: 0px !important;
